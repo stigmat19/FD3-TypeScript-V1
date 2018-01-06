@@ -1,46 +1,35 @@
-
 // типизация аргументов и возвращаемого значения
 // классические функции
-
-function kvadrat(v:number):number {
-    return v*v;
+function kvadrat(v) {
+    return v * v;
 }
-
-function myAlert(txt:string):void {
+function myAlert(txt) {
     alert(txt);
 }
-
 // типизация аргументов и возвращаемого значения
 // стрелочные функции
-
-const kvadrat2 = (v:number):number => {
-    return v*v;
+var kvadrat2 = function (v) {
+    return v * v;
 };
-
-const myAlert2 = (txt:string) => {
+var myAlert2 = function (txt) {
     alert(txt);
 };
-
 // типизация аргументов, возвращаемого значения
 // и самого идентификатора (имени) функции
 // классические функции
-
-const kvadrat3:(number)=>number = function(v:number):number {
-    return v*v;
+var kvadrat3 = function (v) {
+    return v * v;
 };
-
-const myAlert3:(txt)=>void = function(txt:string):void {
+var myAlert3 = function (txt) {
     alert(txt);
 };
-
 // типизация аргументов, возвращаемого значения
 // и самого идентификатора (имени) функции
 // стрелочные функции
-
-const kvadrat4:(number)=>number = (v:number):number => {
-    return v*v;
+var kvadrat4 = function (v) {
+    return v * v;
 };
-
-const myAlert4:(txt)=>void = (txt:string) => {
+var myAlert4 = function (txt) {
     alert(txt);
 };
+//# sourceMappingURL=app.js.map
